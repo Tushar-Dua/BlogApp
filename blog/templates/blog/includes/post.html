@@ -1,15 +1,15 @@
+{%for object in some_data%}
 <li>
     <article class="post">
         <a href="{% url "single-post-page" slug="smoothie-recipe" %}">
-            <img src="" alt="Selva's posts">
+            <img src="" alt="Tushar's posts">
         </a>
         <div class="post__content">
-            <h3>Healthy Smoothie</h3>
+            <h3>{{object.name}}</h3>
             <p>
-                Smoothies are a good way to start you healthy day.
-                Try a smoothie for your breakfast.
-                Keeps you energetic and full of vigour.
+                {{object.description}}
             </p>
         </div>
     </article>
 </li>
+{% endfor %}

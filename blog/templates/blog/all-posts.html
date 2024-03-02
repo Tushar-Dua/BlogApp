@@ -11,9 +11,9 @@
 
 {% block content %}
     <h1>All Posts on my site</h1>
-    {% include "blog/includes/post.html" %}
-    {% include "blog/includes/post.html" %}
-    {% include "blog/includes/post.html" %}
-    {% include "blog/includes/post.html" %}
-    {% include "blog/includes/post.html" %}
+    
+    {% with some_data=data %}
+        {% include "blog/includes/post.html" %}
+    {% endwith %}
+    <h2>rfsrfsf</h2>
 {% endblock %}
